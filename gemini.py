@@ -16,7 +16,7 @@ while True:
     # Connect to the Gemini client and make a response
     response = client.models.generate_content(
         model="gemini-3-flash-preview",
-        contents=query
+        contents=f"Answer the following in a pirate voice: {query}"
     )
 
     print(response.text)
